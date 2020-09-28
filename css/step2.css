@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background: radial-gradient(circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    overflow: hidden;
+}
+
+.top{
+    border: 5px solid hsl(217, 16%, 45%);
+    border-radius: 15px;
+}
+
+.score{
+    color: hsl(229, 64%, 46%);
+}
+
+.score-block{
+    border-radius: 15px;
+}
+
+.paper{
+    width: 13rem;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 120px;
+    border: 1.5rem solid hsl(230, 89%, 62%);
+}
+
+.scissors{
+    width: 13rem;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 120px;
+    border: 1.5rem solid hsl(39, 89%, 49%);
+}
+
+.rock{
+    width: 13rem;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 6rem;
+    border: 1.5rem solid hsl(349, 71%, 52%);
+}
+
+.round{
+    border: 7rem solid #00000038;
+    width: 4rem;
+    border-radius: 42rem;
+}
+
+.effect2{
+    background: repeating-radial-gradient(circle, hsl(214deg 11% 41% / 0%), hsl(237deg 26% 89% / 18%));
+    border-radius: 17rem;
+    width: 17rem;
+    padding: 2rem;
+}
+
+.effect1{
+    background: repeating-radial-gradient(circle, hsl(214deg 11% 41% / 0%), hsl(237deg 26% 89% / 13%));
+    border-radius: 13rem;
+    width: 23rem;
+    padding: 3rem;
+}
+
+.effect{
+    order: 2;
+    background: repeating-radial-gradient(circle, hsl(214deg 11% 41% / 0%), hsl(252deg 26% 89% / 8%));
+    border-radius: 15rem;
+    width: 27rem;
+    padding: 2rem;
+    margin-top: -7rem;
+    margin-left: -2rem;
+}
+
+.margin{
+    margin: 10rem 3rem 0rem 0rem;
+    border: 1px solid white;
+}
+
+.respTitle1{
+    bottom: 0rem;
+    left: 8rem;
+}
+
+.respTitle2{
+    bottom: 0rem;
+    left: 5rem;
+}
+
+@media screen and (max-width:375px){
+
+    .top{
+        margin: 0rem 1.8rem;
+        width: 20rem;
+    }
+
+    #score{
+        font-size: 2rem;
+    }
+    
+    .score{
+        font-size: 0.9rem;
+    }
+    
+    .responsiveUser{
+        width: 8rem;
+        padding: 2rem;
+    }
+
+    .responsiveComputer{
+        width: 8rem;
+        padding: 2rem;
+    }
+
+    .paper{
+        border: 1rem solid hsl(230, 89%, 62%);
+    }
+
+    .round{
+        border: 4.3rem solid #00000038;
+        margin-left: -1rem;
+        margin-top: -0.2rem;
+    }
+
+    .effect2{
+        width: 12rem;
+    }
+    
+    .effect1{
+        width: 18rem;
+    }
+    
+    .effect{
+        order: 1;
+        width: 22rem;
+        margin-left: -8rem;
+    }
+
+    .scissors{
+        border: 1rem solid hsl(39, 89%, 49%);
+    }
+    
+    .rock{
+        border: 1rem solid hsl(349, 71%, 52%);
+    }
+
+    .margin{
+        margin-right: 8rem;
+    }
+
+    .row h3{
+        font-size: 1rem;
+    }
+
+    .respTitle1{
+        position: absolute;
+        left: 2rem;
+        bottom: 1rem;
+    }
+    
+    .respTitle2{
+        position: absolute;
+        left: 1rem;
+    }
+}
