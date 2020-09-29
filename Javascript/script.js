@@ -4,7 +4,7 @@ var scissors = document.getElementById("scissors")
 var rock = document.getElementById("rock")
 
 var score = document.getElementById("score")
-score.textContent = 12
+score.textContent = 0 | sessionStorage.getItem("score")
 
 paper.addEventListener("click", function(){
     localStorage.setItem("Paper_value", "1")
