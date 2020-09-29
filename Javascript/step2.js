@@ -2,7 +2,7 @@
 var computer = Math.floor((Math.random() * 3) + 1)
 
 var score = document.getElementById("score")
-score.textContent = localStorage.getItem("score")
+score.textContent = sessionStorage.getItem("score")
 
 var effectLeft = document.getElementById("one")
 var effectRight = document.getElementById("two")
@@ -107,6 +107,8 @@ setTimeout(function(){
                 --score.textContent
             }
 
+            sessionStorage.setItem("score",score.textContent)
+
             effectLeft.appendChild(div1)
             div1.appendChild(div2)
             if (user == 1) {
@@ -129,6 +131,7 @@ setTimeout(function(){
         if(output == "win"){
 
             ++score.textContent
+            sessionStorage.setItem("score",score.textContent)
             effectLeft.appendChild(div1)
             div1.appendChild(div2)
             if (user == 1) {
@@ -163,6 +166,7 @@ setTimeout(function(){
     
             if(score.textContent > 0){
                 --score.textContent
+                sessionStorage.setItem("score",score.textContent)
             }
         }
     }
